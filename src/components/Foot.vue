@@ -6,6 +6,31 @@
     <icon-container>
       <icons v-for="(link, index) in footer.links" :key="`product-desctiption-${index}`" v-bind:href="link.url" target="_blank"><i v-bind:class="link.fa"></i></icons>
     </icon-container>
+
+    <div>
+      <BeiAn>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://beian.miit.gov.cn"
+        >
+          {{footer.beiAn}}
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          v-bind:href="`http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${footer.gongAnID}`"
+        >
+          <img src="/beian.png" alt="备案图标"/>
+          {{footer.gongAn}}
+        </a>
+        <p>
+          <small className="text-muted">
+            了解更多作品详情，请留言垂询。
+          </small>
+        </p>
+      </BeiAn>
+    </div>
   </app-footer>
 </template>
 
@@ -53,12 +78,20 @@ const IconContainer = styled.div`
   display: flex;
 `
 
+const BeiAn = styled.p`
+  margin:auto;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 36px;
+`
+
 export default {
   components: {
     AppFooter,
     Author,
     Icons,
-    IconContainer
+    IconContainer,
+    BeiAn
   },
   props: {
     footer: {

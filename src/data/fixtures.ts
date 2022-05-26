@@ -1,129 +1,141 @@
 export default {
-  author: "Sam Xie",
+  author: "Dirk Chang",
   hero: {
-    subtitle: "Software engineer at Cash App.",
-    description: "Building reliable and scalable systems by day. Leveraging technology to launch fully featured products by night.",
-    cta: "Browse Products",
+    subtitle: "物联网从业者",
+    description: "专注于工业物联网领域，从事工业边缘计算网关产品、云边计算平台的探索和设计",
+    cta: "查看作品",
   },
   products: {
     featured: [
       {
-        name: "DoubleText",
-        medium: "React · GraphQL · Golang",
-        summary: "The #1 Facebook Messenger analyzer.",
+        name: "FreeIOE",
+        medium: "开源 · 开放 · 灵活",
+        summary: "FreeIOE 工业边缘计算网关产品",
         copy: [
-          "See millions of messages at a glance, without data leaving your computer."
+          "开源的工业边缘计算网关产品，帮助客户快速形成云边计算架构的工业物联网产品."
         ],
         links: {
           color: "#363636",
           primary: {
             name: "Discover",
-            url: "https://doubletext.me/"
+            url: "https://github.com/freeioe/freeioe"
           }
         },
         images: [
-          "/doubletext/0.jpg",
-          "/doubletext/1.jpg",
-          "/doubletext/2.jpg",
-          "/doubletext/3.jpg",
-          "/doubletext/4.jpg"
+          "/freeioe/0.png",
+          "/freeioe/1.png",
         ]
       },
       {
-        name: "ClimbList",
-        medium: "React · Next.js",
-        summary: "Construction is now in progress.",
+        name: "冬笋云平台",
+        medium: "智能 · 免费 · 开放",
+        summary: "冬笋科技运营的云边计算平台产品.",
         copy: [
-          "Compare and track grades and pricing between gyms around the country.",
+          "冬笋科技基于 FreeIOE 构建的工业品质的 ThingsLink 边缘计算网关产品的配套云平台.",
         ],
         links: {
           color: "#363636",
           primary: {
-            name: "Learn more",
-            url: "https://climblist.com/"
+            name: "Try it",
+            url: "http://cloud.iiot8.com/"
           }
         },
         images: [
-          "/climblist/0.jpg",
-          "/climblist/1.jpg",
+          "/thingsroot/0.png",
+          "/thingsroot/1.png",
+          "/thingsroot/2.png",
+          "/thingsroot/3.png",
+          "/thingsroot/4.png",
+        ]
+      },
+      {
+        name: "KooIoT Cloud",
+        medium: "Smart · Free · Customizable",
+        summary: "Free and customizable cloud platform.",
+        copy: [
+          "The gateway device maintain cloud platform, support all FreeIOE inside gateway devices.",
+        ],
+        links: {
+          color: "#363636",
+          primary: {
+            name: "Try it",
+            url: "http://iot.kooiot.cn/"
+          }
+        },
+        images: [
+          "/kooiot/0.png",
+          "/kooiot/1.png",
+          "/kooiot/2.png",
+          "/kooiot/3.png",
+          "/kooiot/4.png",
+          "/kooiot/5.png",
+          "/kooiot/6.png",
         ]
       }
     ],
     // Only supports 0-3 at the moment
     minor: [
       {
-        name: "Volunteer Portal",
-        description: "Find and track volunteer opportunities.",
+        name: "Document",
+        description: "How to develop FreeIOE application?",
         link: {
-          name: "Github",
-          url: "https://github.com/zendesk/volunteer_portal"
+          name: "Guide",
+          url: "https://github.com/freeioe/freeioe_app_book"
         }
       },
       {
-        name: "Final Slash VR",
-        description: "Short survival experience on an abandoned planet.",
+        name: "Discussion",
+        description: "Join the discussion for making FreeIOE be better.",
         link: {
-          name: "Download",
-          url: "https://samzx.itch.io/final-slash-vr"
+          name: "Forum",
+          url: "http://freeioe.org"
         }
       },
       {
-        name: "MPH Watch",
-        description: "Stats for miners mining on Mining Pool Hub.",
+        name: "Hardware",
+        description: "The third party hardwares supported by FreeIOE.",
         link: {
-          name: "Demo",
-          url: "https://mphwatch.samxie.net/demo"
+          name: "View",
+          url: "/hardwares"
         }
       }
     ]
   },
   logoSection: {
-    title: "As hired by",
+    title: "Where to buy?",
     // Only supports 0-3 at the moment
     logos: [
       {
-        src: "/logos/unimelb.svg",
-        url: "https://unimelb.edu.au/",
-        alt: "Unimelb"
+        src: "/product/C202.png",
+        url: "http://kooiot.com/",
+        alt: "KooIoT"
       },
       {
-        src: "/logos/zendesk.svg",
-        url: "https://www.zendesk.com/",
-        alt: "Zendesk"
+        src: "/product/Q102.jpg",
+        url: "http://www.thingsroot.com/",
+        alt: "ThingsLink"
       },
       {
         src: "/logos/cashapp.svg",
-        url: "https://cash.app/",
-        alt: "Cash App"
+        url: "/hardwares",
+        alt: "Hardwares"
       }
   ]
   },
   footer: {
-    tagline: "Sam Xie — Melbourne, Australia",
+    tagline: "Dirk Chang — Beijing, China",
+    beiAn: "京ICP备2021026964号",
+    gongAn: "京公网安备 11010802035844号",
+    gongAnID: "11010802035844",
     links: [
-      {
-        name: "Twitter",
-        url: "https://twitter.com/samxstudio",
-        fa: "fab fa-twitter" // Code from: https://fontawesome.com/v5/icons/twitter?s=brands
-      },
-      {
-        name: "Medium",
-        url: "https://medium.com/@samxie",
-        fa: "fab fa-medium"
-      },
       {
         name: "Github",
         url: "https://github.com/samzx",
         fa: "fab fa-github"
       },
       {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/xiesam/",
-        fa: "fab fa-linkedin"
-      },
-      {
         name: "Email",
-        url: "mailto:contact@samxie.net",
+        url: "mailto:dirk@kooiot.com",
         fa: "fa fa-envelope"
       },
     ]
